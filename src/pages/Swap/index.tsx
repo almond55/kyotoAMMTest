@@ -1,8 +1,8 @@
 import { CurrencyAmount, JSBI, Token, Trade } from '@nguyenphu27/sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
-import { CardBody, ArrowDownIcon, Button, IconButton, Text, Link } from '@nguyenphu27/uikit'
-import styled, { ThemeContext } from 'styled-components'
+import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@nguyenphu27/uikit'
+import { ThemeContext } from 'styled-components'
 import AddressInputPanel from 'components/AddressInputPanel'
 import Card, { GreyCard } from 'components/Card'
 import { AutoColumn } from 'components/Column'
@@ -38,10 +38,10 @@ import PageHeader from 'components/PageHeader'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import AppBody from '../AppBody'
 
-const StyledLink = styled(Link)`
-  display: inline;
-  color: ${({ theme }) => theme.colors.failure};
-`
+// const StyledLink = styled(Link)`
+//  display: inline;
+//  color: ${({ theme }) => theme.colors.failure};
+// `
 
 const Swap = () => {
   const loadedUrlParams = useDefaultsFromURLSearch()
