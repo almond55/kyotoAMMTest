@@ -7,8 +7,8 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const KIYOCAKE = new Token(ChainId.TESTNET, '0x4FbFB8d3B0770B0FE9229baeb3815640f7d28Aa4', 18, 'KIYO', 'KiyoCake Token')
-export const LINK = new Token(ChainId.TESTNET, '0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39', 18, 'LINK', 'ChainLink Token')
+export const KIYOCAKE = new Token(ChainId.MAINNET, '0x4FbFB8d3B0770B0FE9229baeb3815640f7d28Aa4', 18, 'KIYO', 'KiyoCake Token')
+export const LINK = new Token(ChainId.MAINNET, '0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39', 18, 'LINK', 'ChainLink Token')
 // export const KRiY = new Token(ChainId.TESTNET, '0x34a6f696d4107174436F11341841655C1A746315', 18, 'KRiY', 'Kroy Token')
 
 // export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
