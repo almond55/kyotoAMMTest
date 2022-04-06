@@ -6,7 +6,8 @@ import { WalletLinkConnector } from '@web3-react/walletlink-connector'
 // import { BscConnector } from '@binance-chain/bsc-connector'
 import { NetworkConnector } from './NetworkConnector'
 
-const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
+// const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
+const NETWORK_URL = 'https://polygon-rpc.com/'
 
 export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '137')
 
@@ -15,7 +16,7 @@ if (typeof NETWORK_URL === 'undefined') {
 }
 
 export const network = new NetworkConnector({
-  urls: { [NETWORK_CHAIN_ID]: NETWORK_URL },
+  urls: { [Number('137')]: NETWORK_URL },
 })
 
 let networkLibrary: Web3Provider | undefined
@@ -32,7 +33,7 @@ export const injected = new InjectedConnector({
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
-  rpc: { [NETWORK_CHAIN_ID]: NETWORK_URL },
+  rpc: { 137: NETWORK_URL },
   bridge: 'https://bridge.walletconnect.org',
   qrcode: true,
 })
@@ -45,6 +46,7 @@ export const walletlink = new WalletLinkConnector({
   appName: 'Uniswap',
   appLogoUrl:
     'https://mpng.pngfly.com/20181202/bex/kisspng-emoji-domain-unicorn-pin-badges-sticker-unicorn-tumblr-emoji-unicorn-iphoneemoji-5c046729264a77.5671679315437924251569.jpg',
+  supportedChainIds: [137],
 })
 
 export const connectorsByName: { [connectorName in ConnectorNames]: any } = {
