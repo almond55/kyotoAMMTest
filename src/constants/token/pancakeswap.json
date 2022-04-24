@@ -11,6 +11,13 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
+      "name": "CCOIN Token",
+      "symbol": "CCOIN",
+      "address": "0x71b1E6b9e18519796Bdf204Ec4A54AB23b3BCd5b",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "name": "CCRO-CER-A-S1",
       "symbol": "CCRO-CER-A-S1",
       "address": "0x560191625B71c291BB06e3239efb6D5d1F2171EE",
