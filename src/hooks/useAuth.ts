@@ -1,10 +1,6 @@
 import { useCallback } from 'react'
-import { useWeb3React, UnsupportedChainIdError } from '@web3-react/core'
-import { NoBscProviderError } from '@binance-chain/bsc-connector'
-import {
-  NoEthereumProviderError,
-  UserRejectedRequestError as UserRejectedRequestErrorInjected,
-} from '@web3-react/injected-connector'
+import { useWeb3React } from '@web3-react/core'
+import { UserRejectedRequestError as UserRejectedRequestErrorInjected } from '@web3-react/injected-connector'
 import {
   UserRejectedRequestError as UserRejectedRequestErrorWalletConnect,
   WalletConnectConnector,
@@ -27,7 +23,7 @@ const useAuth = () => {
           error instanceof UserRejectedRequestErrorWalletConnect
         ) {
           if (connector instanceof WalletConnectConnector) {
-            const walletConnector = connector as WalletConnectConnector
+            // const walletConnector = connector as WalletConnectConnector
             // walletConnector.walletConnectProvider = null
           }
           toastError('Authorization Error', 'Please authorize to access your account')

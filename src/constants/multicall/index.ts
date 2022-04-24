@@ -7,8 +7,8 @@ import MULTICALL_ABI from './abi.json'
 // }
 
 const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '', // TODO
-  [ChainId.TESTNET]: '0x1a4b46512004e983B9f604De9b4A108663247cC3'
+  [ChainId.MAINNET]: '0xd4Fca5E7c9f1A8c20a155bB2Aae7A8a657380Ab0',
+  [ChainId.TESTNET]: '0xd4Fca5E7c9f1A8c20a155bB2Aae7A8a657380Ab0'
 }
 
 export { MULTICALL_ABI, MULTICALL_NETWORKS }

@@ -2,7 +2,7 @@ import React from 'react'
 import { Modal } from '@nguyenphu27/uikit'
 import SlippageToleranceSetting from './SlippageToleranceSetting'
 import TransactionDeadlineSetting from './TransactionDeadlineSetting'
-import AudioSetting from './AudioSetting'
+// import AudioSetting from './AudioSetting'
 
 type SettingsModalProps = {
   onDismiss?: () => void
@@ -17,7 +17,6 @@ const SettingsModal = ({ onDismiss = defaultOnDismiss, translateString }: Settin
     <Modal title={translateString(1200, 'Settings')} onDismiss={onDismiss}>
       <SlippageToleranceSetting translateString={translateString} />
       <TransactionDeadlineSetting translateString={translateString} />
-      <AudioSetting translateString={translateString} />
     </Modal>
   )
 }

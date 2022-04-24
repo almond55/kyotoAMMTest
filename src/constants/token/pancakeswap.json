@@ -11,23 +11,23 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
-      "name": "KyotoDEX Token",
-      "symbol": "KIYODex",
-      "address": "0xF16d0AcA7789e1C0b2C0863E5104af62E5112787",
+      "name": "CCRO-CER-A-S1",
+      "symbol": "CCRO-CER-A-S1",
+      "address": "0x560191625B71c291BB06e3239efb6D5d1F2171EE",
       "chainId": 137,
       "decimals": 18
     },
     {
-      "name": "Kriy Coin",
-      "symbol": "KRiY",
-      "address": "0x62A1EfF291276D7D4Fa860F63a43c483A67F6B8D",
+      "name": "CCRF-CER-A-18M-S2",
+      "symbol": "CCRF-CER-A-18M-S2",
+      "address": "0x55ee98Bd56BF52d794c1A3473e0a5a98a1Ce0995",
       "chainId": 137,
       "decimals": 18
     },
     {
-      "name": "Bruv Coin",
-      "symbol": "BRUVvv",
-      "address": "0x4D6a0b79c64735e9B3bc78587C6799ABa355220e",
+      "name": "CCRF-CER-A-12M-S1",
+      "symbol": "CCRF-CER-A-12M-S1",
+      "address": "0x9f603DD850e75BC4140ef5d2aE5aA12727AF5113",
       "chainId": 137,
       "decimals": 18
     }

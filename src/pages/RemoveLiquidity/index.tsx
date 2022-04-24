@@ -125,7 +125,7 @@ export default function RemoveLiquidity({
     ]
     const domain = {
       // name: 'Pancake LPs',
-      name: 'KyotoDEX LP',
+      name: 'Carbondex LPs',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
