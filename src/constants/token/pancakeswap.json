@@ -15,8 +15,7 @@
       "symbol": "CCOIN",
       "address": "0x71b1E6b9e18519796Bdf204Ec4A54AB23b3BCd5b",
       "chainId": 137,
-      "decimals": 18,
-      "logoURI": "../../../public/images/pancakeswap.png"
+      "decimals": 18
     },
     {
       "name": "CCRO-CER-A-S1",
