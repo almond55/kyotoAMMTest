@@ -16,8 +16,7 @@ const Container = styled.div`
 
   ${({ theme }) => theme.mediaQueries.lg} {
     
-    background-size: contain, 266px, 266px;
-    min-height: 90vh;
+    background-size: auto;
   }
 `
 
